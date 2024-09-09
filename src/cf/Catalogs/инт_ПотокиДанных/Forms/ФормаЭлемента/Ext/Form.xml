@@ -98,6 +98,11 @@
 			<ContextMenu name="РедакторКодаКонтекстноеМеню" id="26"/>
 			<ExtendedTooltip name="РедакторКодаРасширеннаяПодсказка" id="27"/>
 		</HTMLDocumentField>
+		<Button name="ПроверитьКод" id="58">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПроверитьКод</CommandName>
+			<ExtendedTooltip name="ПроверитьКодРасширеннаяПодсказка" id="59"/>
+		</Button>
 		<Table name="ПодписчикиПотока" id="30">
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
@@ -165,7 +170,7 @@
 				<AdditionalColumns table="Объект.ПодписчикиПотока"/>
 			</Columns>
 		</Attribute>
-		<Attribute name="РедакторКода" id="2">
+		<Attribute name="РедакторКода" id="60">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -196,6 +201,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Настройки</Action>
+		</Command>
+		<Command name="ПроверитьКод" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьКод</Action>
 		</Command>
 	</Commands>
 </Form>
